@@ -1,0 +1,217 @@
+:root {
+	--main-secondary-color-purple: #804EB8;
+	--main-secondary-color-yellow: #FFE67E;
+}
+
+body {
+	background-color: var(--main-primary-color-yellow) !important;
+	padding: 40px !important;
+}
+
+.text-neonet {
+	color: var(--main-primary-color-purple);
+}
+
+.div-color {
+	min-height: 800px;
+	background-image: linear-gradient(90deg,
+		var(--main-primary-color-purple) 50%,
+		#FFFFFF 50%, #FFFFFF 100%
+	);
+	border-top-right-radius: 3em 6.5em;
+	border-bottom-left-radius: 3em 6.5em;
+}
+
+.div-diagonal-01 {
+	clip-path: polygon(100% 0%, 0% 100%, 0% 0%, 100% 0%);
+	background-image: linear-gradient(to right, var(--main-secondary-color-yellow), var(--main-primary-color-yellow) 75%);
+	max-height: 20px !important;
+	min-height: 20px !important;
+	min-width: 100% !important;
+	margin-left: -2px;
+	margin-top: -2px;
+	z-index: 20;
+}
+
+.div-diagonal-02 {
+	clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%);
+	background-image: linear-gradient(to right, var(--main-primary-color-yellow), var(--main-secondary-color-yellow) 75%);
+	max-height: 20px !important;
+	min-height: 20px !important;
+	min-width: 100% !important;
+	margin-right: -2px;
+	margin-bottom: -2px;
+	z-index: 20;
+}
+
+/*.div-diagonal-05 {
+	clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%);
+	background-image: linear-gradient(to right, var(--main-primary-color-yellow), var(--main-secondary-color-yellow) 75%);
+	max-height: 20px !important;
+	min-height: 20px !important;
+	min-width: 100% !important;
+	margin-right: -100px !important;
+	z-index: 20;
+}
+
+.div-diagonal-06 {
+	clip-path: polygon(100% 0%, 0% 100%, 0% 0%, 100% 0%);
+	background-image: linear-gradient(to right, var(--main-secondary-color-yellow), var(--main-primary-color-yellow) 75%);
+	max-height: 20px !important;
+	min-height: 20px !important;
+	min-width: 100% !important;
+	z-index: 20;
+}*/
+
+@media (max-width: 767px) {
+	.div-color {
+		background-image: linear-gradient(180deg,
+			var(--main-primary-color-purple) 0 var(--front-card-height),
+			#FFFFFF var(--front-card-height) 100%
+		) !important;
+		border-top-right-radius: 3em 6.5em  !important;
+		border-bottom-left-radius: 3em 6.5em !important;
+	}
+}
+
+@media (max-width: 767px) {
+	body {
+		padding: 15px !important;
+	}
+}
+
+@media (max-width: 400px) {
+	body {
+		padding: 5px !important;
+	}
+}
+
+@media (max-width: 300px) {
+	body {
+		padding: 0px !important;
+	}
+}
+
+
+.div-diagonal-03 {
+/*	clip-path: polygon(100% 0%, 0% 100%, 0% 0%, 100% 0%);*/
+	clip-path: polygon(75% 100%, 0% 100%, 0% 0%);;
+	background-color: var(--main-primary-color-yellow);
+	min-height: 100% !important;
+	min-width: 0px !important;
+	max-width: 0px !important;
+	margin-left: -2px !important;
+	margin-bottom: -50px !important;
+	z-index: 30;
+}
+
+.div-diagonal-04 {
+/*	clip-path: polygon(0% 100%, 100% 0%, 100% 100%, 0% 100%);*/
+	clip-path: polygon(25% 0%, 100% 0%, 100% 100%);
+	background-color: var(--main-primary-color-yellow);
+	min-height: 100% !important;
+	min-width: 0px !important;
+	max-width: 0px !important;
+	margin-right: -2px !important;
+	margin-top: -10px !important;
+	z-index: 30;
+}
+
+.invalid-feedback {
+    display:block;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: .875em;
+    color: var(--bs-form-invalid-color);
+}
+
+.lead{
+    text-align: justify;
+	font-size: 16px;
+}
+
+.lead *{
+    color: var(--color-custom-text-main)!important
+}
+
+.form-control:focus, .form-select:focus {
+	color: var(--main-primary-color-purple);
+	background-color: var(--bs-body-bg);
+	border-width: 0.2rem;
+	border-color: var(--main-primary-color-yellow);
+	outline: 0;
+	box-shadow: none;
+}
+
+.form-select{
+	width: auto;
+	font-size: 17px;
+	color: var(--main-primary-color-purple);
+}
+
+/* Estilos para los radio buttons personalizados */
+.custom-radio {
+	position: relative;
+	display: inline-block;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.custom-radio input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.custom-radio .radio-label {
+	color: #000; /* Color de texto por defecto */
+	text-decoration: none; /* Quita el subrayado por defecto */
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.3s; 
+}
+
+.custom-radio .radio-label:hover {
+	text-decoration: none; /* Subraya el texto al pasar el cursor */
+}
+
+.custom-radio input[type="radio"]:checked + .radio-label {
+	color: var(--main-primary-color-purple); /* Cambia el color de texto cuando está seleccionado */
+	border-bottom-color: var(--main-primary-color-purple);
+}
+
+.custom-radio .radio-label:hover {
+    text-decoration: none; /* Subraya el texto al pasar el cursor */
+}
+
+.custom-radio input[type="radio"]:checked + .radio-label {
+    color: var(--main-primary-color-purple); /* Cambia el color de texto cuando está seleccionado */
+    border-bottom-color: var(--main-primary-color-purple);
+}
+
+.custom-button {
+	background-color: var(--main-primary-color-yellow); /* Color de fondo del botón */
+	color: black; /* Color del texto */
+	border: none; /* Quita el borde del botón */
+	cursor: pointer;
+	position: relative;
+	transition: all 0.3s; 
+	border-radius: 6px;
+} 
+
+.custom-button:hover{
+	background-color: var(--main-primary-color-purple); /* Color de fondo del botón */
+	color: white; /* Color del texto */
+	transition: all 0.3s; 
+}
+
+.form-check-input:checked {
+	background-color: var(--main-primary-color-yellow);
+	border-color: var(--main-primary-color-yellow);
+}
+
+.form-check-input:focus {
+	border-color: var(--main-primary-color-yellow);
+	outline: 0;
+	box-shadow: 0 0 0 .25rem rgba(255, 255, 255, 0);
+}
+

@@ -1,0 +1,36 @@
+.custom-modal-button {
+    background-color: var(--color-custom-secondary)!important; /* Color de fondo del botón */
+    color: black!important; /* Color del texto */
+    border: none!important; /* Quita el borde del botón */
+    cursor: pointer!important;
+    position: relative!important;
+    padding-left: 5rem!important;
+    padding-right: 5rem!important;
+    transition: all 0.3s!important;
+    border-radius: 6px!important;
+} 
+    
+.custom-modal-button:hover{
+    background-color: var(--color-custom-main)!important; /* Color de fondo del botón */
+    color: white!important; /* Color del texto */
+    transition: all 0.3s!important;
+}
+
+.swal2-confirm, .swal2-deny, .swal2-cancel{
+    background-color: var(--color-custom-secondary)!important;
+    color: black!important;
+}
+
+.swal2-confirm:hover, .swal2-deny:hover, .swal2-cancel:hover{
+    background-color: var(--color-custom-main)!important;
+    color: white!important;
+}
+
+/* .swal2-icon.swal2-error {
+    border-color: var(--color-custom-main)!important;
+    color: var(--color-custom-main)!important;
+}
+
+.swal2-icon.swal2-error [class^=swal2-x-mark-line] {
+    background-color: var(--color-custom-main)!important;
+} */
